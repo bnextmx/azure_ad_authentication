@@ -1,6 +1,6 @@
 group 'com.fsconceicao.azure_ad_authentication'
 version '1.0-SNAPSHOT'
-def msalVersion = "4.+"
+def msalVersion = "6.+"
 if (project.hasProperty("distMsalVersion")) {
     msalVersion = distMsalVersion
 }
