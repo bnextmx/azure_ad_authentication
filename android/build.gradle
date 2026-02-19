@@ -1,6 +1,6 @@
 group 'com.fsconceicao.azure_ad_authentication'
 version '1.0-SNAPSHOT'
-def msalVersion = "6.+"
+def msalVersion = "6.2.0"
 if (project.hasProperty("distMsalVersion")) {
     msalVersion = distMsalVersion
 }
@@ -57,4 +57,5 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     implementation "com.microsoft.identity.client:msal:${msalVersion}"
+    implementation "com.nimbusds:nimbus-jose-jwt:9.37.3"
 }
